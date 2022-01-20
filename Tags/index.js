@@ -50,6 +50,7 @@ class Tags extends React.Component {
     } else {
       this.setState({ text });
     }
+    this.props.setTextInputTag && this.props.setTextInputTag(text)
   };
 
   onSubmitEditing = () => {
